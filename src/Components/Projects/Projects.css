@@ -1,10 +1,13 @@
 .projects{
+    
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    margin: 80px 170px;
+    gap: 20px;
+    border: 2px solid #343434;
+    width: 300px;
+    padding: 20px 40px;
+    border-radius: 4px;
+   
 }
 
 .projects-title{
@@ -14,7 +17,7 @@
 
 .projects-title h1{
     padding: 0px 30px;
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 600;
 }
 
@@ -30,7 +33,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding: 60px;
+    padding: 10px;
     border-radius: 10px;
     border: 2px solid white;
     transition: 0.4s;
@@ -39,9 +42,9 @@
 
 .projects-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 80px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 40px;
 }
 
 .services-format h3{
@@ -50,20 +53,20 @@
 }
 
 .services-format h2{
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 800;
 }
 
 .services-format p{
     color: #d4d4d4;
     font-size: 24px;
-    line-height: 40px;
-    max-width: 300px;
+    line-height: 20px;
+    max-width: 100px;
 }
 
 .services-readmore{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
     margin-top: 20px;
 }
@@ -74,44 +77,3 @@
     transition: 0.4s;
 }
 
-@media(max-width: 768px){
-    .projects{
-        align-items: start;
-        gap: 70px;
-        margin: 20px 70px;
-
-    }
-    .projects-title h1{
-        padding: 0;
-        font-size: 50px;
-    }
-
-    .projects-title img{
-        width: 130px;
-        margin-right: -20px;
-    }
-
-    .projects-format{
-        gap: 20px;
-        padding: 32px;
-    }
-
-    .projects-format h2{
-        font-size: 28px;
-    }
-
-    .projects-format p{
-        font-size: 18px;
-        line-height: 32px;
-        max-width: 300px;
-    }
-
-    .services-readmore img{
-        width: 20px;
-    }
-
-    .projects-container{
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-}

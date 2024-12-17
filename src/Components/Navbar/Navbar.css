@@ -1,46 +1,53 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 170px;
-}
 
-.nav-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 60px;
-    font-size: 20px;
-}
 
 .nav-connect{
-    padding: 20px 40px;
-    border-radius: 50px;
-    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 100%);
-    font-size: 22px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.nav-connect:hover{
-    transform: scale(1.05);
-}
-
-.nav-menu li{
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
+    gap: 20px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.nav-menu li img{
-    display: flex;
-    margin: auto;
-}
-
-.anchor-link{
-    text-decoration: none;
+.uil-github{
+    font-size: 30px;
     color: white;
+}
+
+.uil-linkedin{
+    font-size: 30px;
+    color: white;
+}
+
+.uil-youtube{
+    font-size: 30px;
+    color: white;
+}
+
+
+
+.nav-connect .div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: #EEEEEE;
+    border: 2px solid transparent;
+    padding: 8px 17px;
+    background-color: #EE6C4D;
+    border-radius: 50px;
+    
+    cursor: pointer;
+    transition: 0.3s ease
+}
+
+.nav-connect .div:hover{
+    background-color: transparent;
+    color: #EE6C4D;
+    border: 2px solid #EE6C4D; 
+}
+
+.nav-mob-open{
+    display: none;
 }
 
 .nav-mob-close{

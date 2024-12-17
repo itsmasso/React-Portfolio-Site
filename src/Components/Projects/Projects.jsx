@@ -1,6 +1,5 @@
 import React from "react";
 import "./Projects.css";
-import theme_pattern from "../../assets/theme_pattern.svg";
 import Services_Data from "../../assets/services_data";
 import arrow_icon from "../../assets/arrow_icon.svg";
 
@@ -9,7 +8,6 @@ const Projects = () => {
     <div id="projects" className="projects">
       <div className="projects-title">
         <h1>My Projects</h1>
-        <img src={theme_pattern} alt="" />
       </div>
       <div className="projects-container">
         {Services_Data.map((service, index) => {

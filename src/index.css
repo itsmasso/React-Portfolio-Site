@@ -3,9 +3,33 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: PixelOperator;
+  src: url(./fonts/PixelOperator.ttf);
+}
+
+@font-face {
+  font-family: UnifontMono;
+  src: url(./fonts/UnifontExMono.ttf);
+}
+
+@font-face {
+  font-family: PixelNES;
+  src: url(./fonts/Pixel_NES.otf);
+}
+
+@font-face {
+  font-family: Arcadepix;
+  src: url(./fonts/ARCADEPI.TTF);
+}
+
+
 body{
+  image-rendering: pixelated;
   height: 100vh;
-  background: #161513;
+  background: black;
   color: white;
-  font-family: 'Host Grotesk', sans-serif;
+  font-family: 'UnifontMono', sans-serif;
+  
+  letter-spacing: 0.1px;
 }
