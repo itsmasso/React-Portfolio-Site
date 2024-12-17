@@ -1,13 +1,14 @@
 import React from "react";
 import "./Hero.css";
 import "../../App.css"
-import vhs from "../../assets/tv_scan_lines.gif"
+
 const Hero = () => {
   return (
     <div id="home" className="hero">
       <div className="hero-wrapper">
         <div className="hero-title">
-        <h1 className="vhs neon">HEY THERE, WELCOME!</h1>
+        <span>&#10209;</span>
+        <h1 className="vhs neon"> HEY THERE, WELCOME!</h1>
         </div>
 
         

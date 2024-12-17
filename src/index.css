@@ -23,6 +23,11 @@
   src: url(./fonts/ARCADEPI.TTF);
 }
 
+@font-face {
+  font-family: MadouFuto;
+  src: url(./fonts/MadouFutoMaruGothic-d9Xo7.ttf);
+}
+
 
 body{
   image-rendering: pixelated;

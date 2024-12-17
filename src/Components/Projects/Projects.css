@@ -1,24 +1,45 @@
 .projects{
-    
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border: 2px solid #343434;
-    width: 300px;
-    padding: 20px 40px;
-    border-radius: 4px;
+  
+    width: 270px;
+
+    margin-left: 100px;
+    
    
 }
 
 .projects-title{
+  
+    border: 2px solid #ff2ddcb4;
+   
+    padding: 15px 15px;
+    border-radius: 4px;
     position: relative;
-
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
+
+
 .projects-title h1{
-    padding: 0px 30px;
-    font-size: 40px;
-    font-weight: 600;
+    font-family: 'PixelOperator';
+    text-align: ce;
+    font-size: 35px;
+    
+    
+    color: #ff2ddcb4;
+    text-shadow: -1px -1px 0 #3f003494;
+}
+#windows_widget_projects_2{
+    position: absolute;
+    top: 15px;
+    left:90px;
+    width: 100%;
+    height: 15px;
 }
 
 .projects-title img{
@@ -34,10 +55,23 @@
     justify-content: center;
     gap: 20px;
     padding: 10px;
-    border-radius: 10px;
-    border: 2px solid white;
+    border-radius: 4px;
+    width: 250px;
+    height: 300px;
+    overflow: hidden; 
+    position: relative; 
+
     transition: 0.4s;
     cursor: pointer;
+}
+
+.services-format img{
+    position: absolute; 
+    top: 0; 
+    left: -190px; 
+    width: 200%; 
+    height: auto; 
+    object-fit: cover; 
 }
 
 .projects-container{
@@ -47,15 +81,6 @@
     margin-bottom: 40px;
 }
 
-.services-format h3{
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.services-format h2{
-    font-size: 28px;
-    font-weight: 800;
-}
 
 .services-format p{
     color: #d4d4d4;
@@ -72,8 +97,8 @@
 }
 
 .services-format:hover{
-    border: 2px solid purple;
-    transform: scale(1.05);
+    border: 2px solid #ff2ddcb4;
+    transform: scale(1.01);
     transition: 0.4s;
 }
 

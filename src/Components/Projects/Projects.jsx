@@ -2,27 +2,27 @@ import React from "react";
 import "./Projects.css";
 import Services_Data from "../../assets/services_data";
 import arrow_icon from "../../assets/arrow_icon.svg";
+import windows_screen_widget from "../../assets/windows_screen_widget.svg";
+import pro_angler_pic from "../../assets/proAngler_project_pic.png"
+import "../../App.css"
 
 const Projects = () => {
   return (
     <div id="projects" className="projects">
-      <div className="projects-title">
-        <h1>My Projects</h1>
+      <div className="projects-title ">
+        <img
+          src={windows_screen_widget}
+          alt=""
+          id="windows_widget_projects_2"
+        />
+        <span>&#10209;</span>
+        <h1 className="vhs neon-pink">PROJECTS</h1>
       </div>
       <div className="projects-container">
-        {Services_Data.map((service, index) => {
-          return (
-            <div key={index} className="services-format">
-              <h3>{service.s_no}</h3>
-              <h2>{service.s_name}</h2>
-              <p>{service.s_desc}</p>
-              <div className="services-readmore">
-                <p>Read More</p>
-                <img src={arrow_icon} alt="" />
-              </div>
-            </div>
-          );
-        })}
+        <div className="services-format">
+          <img className="vhs"src={pro_angler_pic} alt="" />
+
+        </div>
       </div>
     </div>
   );

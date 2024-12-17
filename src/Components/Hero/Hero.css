@@ -21,6 +21,16 @@
   
 }
 
+.hero-title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-title span{
+    font-size: 20px;
+}
+
 
 .hero h1 {
     font-family: 'Arcadepix';
@@ -40,7 +50,7 @@
 .hero p{
     text-align: start;
     width: 65%;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 22px;
     color: white;
     font-weight: 100;

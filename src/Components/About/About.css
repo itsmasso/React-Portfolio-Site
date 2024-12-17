@@ -12,7 +12,13 @@
 
 .about-title{
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
+.about-title span{
+    font-size: 20px;
 }
 
 .about-title h1{
@@ -46,6 +52,18 @@
 
 }
 
+.about-paragraph p{
+    text-align: start;
+    font-size: 19px;
+    line-height: 22px;
+    color: white;
+    font-weight: 100;
+}
+
+.about-paragraph a{
+    color: #ff00d6;
+    text-decoration: none;
+}
 
 
 @media(max-width:768px){
