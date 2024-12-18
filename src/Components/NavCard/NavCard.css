@@ -59,6 +59,11 @@
     text-decoration: none;
 }
 
+.nav-menu li:hover{
+    color: #ff2ddc;
+    border-color: #ff2ddc;
+}
+
 .nav-menu li img{
     display: flex;
     margin: auto;

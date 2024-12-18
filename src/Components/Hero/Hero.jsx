@@ -17,18 +17,25 @@ const Hero = () => {
           <img src={tv_scan_lines_2} id="profile_img_VHS"></img>
         </div>
         <div className="profile-description">
-          <p>
-            <span>Name</span> Sammy Luong
-          </p>
-          <p>
-            <span>Location</span> California
-          </p>
-          <p>
-            <span>Born</span> May 2001
-          </p>
-          <p>
-            <span>Major</span> Computer Science
-          </p>
+          <div className="desc">
+            <p>
+              <span>Name</span> Sammy Luong
+            </p>
+            <p>
+              <span>Location</span> California
+            </p>
+            <p>
+              <span>Born</span> May 2001
+            </p>
+            <p>
+              <span>Major</span> Computer Science
+            </p>
+          </div>
+          <div className="hero-action">
+            <a href="../../assets/Sammy_Luong_Resume.pdf" download>
+              <div className="hero-resume">My resume</div>
+            </a>
+          </div>
         </div>
       </div>
       <div className="description">
@@ -37,14 +44,6 @@ const Hero = () => {
           huge passion for web development and game development.
         </p>
       </div>
-      {/*
-        <div className="hero-action">
-          <AnchorLink className="hero-connect" offset={50} href="#contact">
-            <i class="uil uil-envelope"></i> Let's connect
-          </AnchorLink>
-          <div className="hero-resume">My resume</div>
-        </div>
-        */}
     </div>
   );
 };

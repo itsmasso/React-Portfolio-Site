@@ -97,11 +97,12 @@
 .profile-description{
     display: flex;
     flex-direction: column;
-    
+    gap: 20px;
 }
 
 .profile-description p{
     width: 100%;
+
 }
 .profile-description p span{
     color: rgb(0, 237, 207);
@@ -112,10 +113,9 @@
 .hero-action{
     display: flex;
     align-items: center;
-    gap: 30px;
+
     font-size: 22px;
-    font-weight: 400;
-    margin: 30px 0px;
+
 }
 
 .description p{
@@ -147,22 +147,24 @@
 }
 
 .hero-resume{
-    display: flex;
-    gap: 10px;
-    align-items: center;
     text-decoration: none;
+    border: 1px solid #EEEEEE;
+    padding: 5px 15px;
     background-color: transparent;
-    border: 2px solid #3D5A80;
-    padding: 22px 28px;
-    color: #3D5A80;
-    border-radius: 50px;
+    border-radius: 5px;
+    font-size: 20px;
     cursor: pointer;
     transition: 0.3s ease
 }
 
 .hero-resume:hover{
-    background-color: #3D5A80;
-    color: #EEEEEE;
+    color: #ff2ddc;
+    border-color: #ff2ddc;
+}
+
+.hero-action a{
+    text-decoration: none;
+    color: white;
 }
 
 @media(max-width:768px){

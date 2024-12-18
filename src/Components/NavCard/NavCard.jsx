@@ -8,7 +8,7 @@ const NavCard = () => {
   const navItems = [
     { label: "Home", key: "home" },
     { label: "About Me", key: "about" },
-    { label: "Projects", key: "projects" },
+  
     { label: "Skills", key: "skills" },
     { label: "Contact", key: "contact" },
   ];
