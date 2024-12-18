@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
@@ -14,14 +14,30 @@ import Skills from "./Components/Skills/Skills";
 
 import masso_logo from "./assets/MassoPixelArtLogo.svg";
 import tv_scan_lines from "./assets/tv_scan_lines.gif";
-import masso_logo_p2 from "./assets/MassoPixelArtLogo_p2.svg";
-import tv_overlay from "./assets/tv_overlay.mp4";
+import tv_scan_lines_2 from "./assets/tv_scan_lines_2.gif";
 import tv_scanlines_bg from "./assets/tv_scan_lines.mp4";
+import spotify_ad from "./assets/follow_spotify_ad.gif";
+import github_ad from "./assets/github_ad.gif";
+
+
+const bannerAds = [spotify_ad, github_ad];
 
 const App = () => {
+  
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex(prevIndex => (prevIndex == bannerAds.length - 1 ? 0 : prevIndex + 1));
+    }, 7000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  
   return (
     <div>
-      <Parallax pages={2}>
+      <Parallax pages={1.5}>
         <ParallaxLayer>
           <video autoPlay loop muted playsInline className="background-video">
             <source src={tv_scanlines_bg} type="video/mp4" />
@@ -32,9 +48,9 @@ const App = () => {
             Your browser does not support the video tag.
           </video>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} factor={2} speed={0.25}>
+        <ParallaxLayer offset={0} factor={1} speed={0.25}>
           <div className="app">
-            <Navbar />
+            <Navbar/>
             <div className="title">
               <div className="title-front">
                 <h1 className="vhs">マッソ</h1>
@@ -56,14 +72,22 @@ const App = () => {
               <div className="main-panel">
                 <Hero />
                 <About />
-                <div className="ad"></div>
+                <div className="ad">
+         
+                  <img src={tv_scan_lines_2} id="tv-scan-lines"></img>
+                  <img
+                    src={bannerAds[currentIndex]}
+                    alt=""
+                    id="bannerAds"
+                  />
+                </div>
                 <Skills />
                 <Footer />
               </div>
               <div className="right-panel">
-            <NavCard />
-            <StatusCard />
-          </div>
+                <NavCard />
+                <StatusCard />
+              </div>
             </div>
           </div>
         </ParallaxLayer>

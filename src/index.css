@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -28,6 +29,11 @@
   src: url(./fonts/MadouFutoMaruGothic-d9Xo7.ttf);
 }
 
+@font-face {
+  font-family: PerfectDOSVGA;
+  src: url(./fonts/Perfect\ DOS\ VGA\ 437\ Win.ttf);
+}
+
 
 body{
   image-rendering: pixelated;
@@ -35,6 +41,6 @@ body{
   background: black;
   color: white;
   font-family: 'UnifontMono', sans-serif;
-  
+  -webkit-font-smoothing: none;
   letter-spacing: 0.1px;
 }

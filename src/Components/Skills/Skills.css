@@ -4,10 +4,30 @@
     flex-direction: column;
     gap: 20px;
     border: 2px solid #343434;
-    width: 100%;
-    padding: 20px 40px;
+    width: 110%;
+    padding: 20px 20px;
     border-radius: 4px;
  
+}
+.skills-title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills-title span{
+    font-size: 20px;
+}
+
+.skills-title h1 {
+    font-family: 'PerfectDOSVGA';
+    text-align: start;
+    font-size: 26px;
+    font-weight: 500;
+    
+    color: rgba(0, 237, 205, 0.8);
+    text-shadow: -1px -1px 0 rgb(0, 94, 81, 0.541);
+
 }
 
 .skills{
@@ -19,61 +39,64 @@
 
 .skill{
     display: flex;
-    gap: 120px;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
     transition: 0.3s;
 }
 
-.skills p {
-    min-width: 150px;
+.skill p span{
     font-size: 24px;
-    font-weight: 500;
+    font-family: 'PerfectDOSVGA';
+    color: white;
 }
 
-.skill hr{
-    outline: none;
-    border: none;
-    width: 50%;
-    height: 9px;
-    border-radius: 50px;
-    background: linear-gradient(264deg, Orange -5.09%, purple 106.28%);
+.skill-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 14px;
 }
 
-.achievements{
+.skill-button{
     display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin-bottom: 80px;
-}
-
-.achievement{
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 10px;
-    transition: 0.5s;
+    padding: 4px 10px;
+    border-radius: 3px;
+    background-color: white;
 }
 
-.achievement h1{
-    font-size: 60px;
-    font-weight: 700;
- 
+.skills span{
+    font-size: 18px;
+    font-family: 'PixelOperator';
+    color: black;
 }
+
+.skills p {
+    font-size: 24px;
+    font-family: 'PerfectDOSVGA';
+    color: rgba(0, 237, 205, 0.8);
+    text-shadow: -1px -1px 0 rgb(0, 94, 81, 0.541);
+}
+
+.button-icon{
+    margin-top: 5.5px;
+}
+
+
 
 .achievement p{
     font-size: 22px;
     font-weight: 500;
 }
 
-.skill:hover{
+.skill-button:hover{
     transform: scale(1.05);
     transition: 0.3s;
 }
 
-.achievement:hover{
-    transform: scale(1.12);
-    transition: 0.5s;
-}
+
 
 @media(max-width:768px){
     .skill{

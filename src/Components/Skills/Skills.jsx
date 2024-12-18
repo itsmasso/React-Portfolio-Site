@@ -1,45 +1,49 @@
-import React from 'react'
-import './Skills.css'
+import React from "react";
+import "./Skills.css";
+import goodSkillsList from "./GoodSkillsList";
+import OkSkillList from "./OkSkillsList";
 const Skills = () => {
   return (
     <div className="skill-wrapper">
-        <h1>SKILLS</h1>
-        <div className="skills">
-            <div className="skill">
-              <p>Add language/framework here</p>
-              <hr style={{ width: "80%" }} />
-            </div>
-            <div className="skill">
-              <p>Add language/framework here</p>
-              <hr style={{ width: "80%" }} />
-            </div>
-            <div className="skill">
-              <p>Add language/framework here</p>
-              <hr style={{ width: "80%" }} />
-            </div>
-            <div className="skill">
-              <p>Add language/framework here</p>
-              <hr style={{ width: "80%" }} />
-            </div>
+      <div className="skills-title">
+        <h1 className="vhs neon">My Skills:</h1>
+      </div>
+      <div className="skills">
+        <div className="skill">
+          <p><span className="vhs neon-white">[</span > good <span className="vhs neon-white">]</span></p>
+          <div className="skill-list">
+            {goodSkillsList.map((skills, index) => {
+              const Icon = skills.icon;
+              return (
+                <div key={index} className="skill-button">
+                  <span className="button-icon">
+                    <Icon />
+                  </span>
+                  <span>{skills.name}</span>
+                </div>
+              );
+            })}
           </div>
-          <div className="achievements">
-        <div className="achievement">
-          <h1>5+</h1>
-          <p>YEARS OF EXPERIENCE</p>
         </div>
-        <hr />
-        <div className="achievement">
-          <h1>5+</h1>
-          <p>YEARS OF EXPERIENCE</p>
-        </div>
-        <hr />
-        <div className="achievement">
-          <h1>5+</h1>
-          <p>YEARS OF EXPERIENCE</p>
+        <div className="skill">
+          <p ><span className="vhs neon-white">[</span> ok <span className="vhs neon-white">]</span></p>
+          <div className="skill-list">
+            {OkSkillList.map((skills, index) => {
+              const Icon = skills.icon;
+              return (
+                <div key={index} className="skill-button">
+                  <span className="button-icon">
+                    <Icon />
+                  </span>
+                  <span>{skills.name}</span>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

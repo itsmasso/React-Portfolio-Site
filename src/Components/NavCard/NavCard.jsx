@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./NavCard.css";
 import { NavItem } from "./NavItem";
-import windows_screen_widget from "../../assets/windows_screen_widget.svg";
+
 
 const NavCard = () => {
   const [menu, setMenu] = useState("home");
@@ -14,10 +14,11 @@ const NavCard = () => {
   ];
   return (
     <div className="navcard">
-      <img src={windows_screen_widget} alt="" id="windows_widget" />
+    
       <div className="navcard-title">
         <span>&#10209;</span>
-        <h1 className="vhs neon-pink">MENU</h1>
+        <h1 className="vhs neon-white">Menu</h1>
+        <p>_ &#9633; x</p>
       </div>
       <ul className="nav-menu">
         {navItems.map((item) => (
