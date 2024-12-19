@@ -4,7 +4,7 @@ import goodSkillsList from "./GoodSkillsList";
 import OkSkillList from "./OkSkillsList";
 const Skills = () => {
   return (
-    <div className="skill-wrapper">
+    <div id="skills" className="skill-wrapper">
       <div className="skills-title">
       <span>&#10209;</span>
         <h1 className="vhs neon-white">My Skills</h1>

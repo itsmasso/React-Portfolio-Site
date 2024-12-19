@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState} from "react";
 import "./NavCard.css";
 import { NavItem } from "./NavItem";
 
 
-const NavCard = ({ScrollToPage}) => {
+const NavCard = () => {
   
+  const[menu, setMenu] = useState("home");
+
   const navItems = [
-    { label: "Home", key: "0" },
-    { label: "About Me", key: "0.2" }, 
-    { label: "Skills", key: "0.7" },
-    { label: "Contact", key: "2" },
+    { label: "Home", key: "home" },
+    { label: "About Me", key: "about" }, 
+    { label: "Skills", key: "skills" },
+    { label: "Contact", key: "contact" },
 
   ];
 
@@ -33,8 +35,9 @@ const NavCard = ({ScrollToPage}) => {
         {navItems.map((item) => (
           <NavItem
             key={item.key}
+            section={item.key}
             label={item.label}
-            onClick={() => ScrollToPage(item.key)}
+            onClick={() => setMenu(item.key)}
           />
         ))}
       </ul>

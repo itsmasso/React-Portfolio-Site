@@ -8,7 +8,7 @@ import Footer from "./Components/Footer/Footer";
 import StatusCard from "./Components/StatusCard/StatusCard";
 import "./App.css";
 
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+
 import NavCard from "./Components/NavCard/NavCard";
 import Skills from "./Components/Skills/Skills";
 
@@ -19,89 +19,65 @@ import tv_scanlines_bg from "./assets/tv_scan_lines.mp4";
 import spotify_ad from "./assets/follow_spotify_ad.gif";
 import github_ad from "./assets/github_ad.gif";
 
-
-
-
 const App = () => {
   const bannerAds = [spotify_ad, github_ad];
-  const scrollRef = useRef();
-
-  const ScrollToPage = (page) =>{
-    scrollRef.current.scrollTo(page);
-  }
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentIndex(prevIndex => (prevIndex == bannerAds.length - 1 ? 0 : prevIndex + 1));
+      setCurrentIndex((prevIndex) =>
+        prevIndex == bannerAds.length - 1 ? 0 : prevIndex + 1
+      );
     }, 7000);
 
     return () => clearInterval(intervalId);
   }, []);
 
-  
   return (
     <div>
-      <Parallax pages={2} ref={scrollRef}>
-        <ParallaxLayer>
-          <video autoPlay loop muted playsInline className="background-video">
-            <source src={tv_scanlines_bg} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <video autoPlay loop muted playsInline className="background-video-2">
-            <source src={tv_scanlines_bg} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} factor={1} speed={0.25}>
-          <div className="app">
-            <Navbar />
-            <div className="title">
-              <div className="title-front">
-                <h1 className="vhs">マッソ</h1>
-              </div>
-              <div className="title-back">
-                <img src={masso_logo} alt="" id="massoLogo" />
-                <img
-                  className="neon"
-                  src={tv_scan_lines}
-                  id="massoLogoVHS"
-                ></img>
-              </div>
+      <video autoPlay loop muted playsInline className="background-video">
+        <source src={tv_scanlines_bg} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video autoPlay loop muted playsInline className="background-video-2">
+        <source src={tv_scanlines_bg} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="app">
+        <Navbar />
+        <div className="title">
+          <div className="title-front">
+            <h1 className="vhs">マッソ</h1>
+          </div>
+          <div className="title-back">
+            <img src={masso_logo} alt="" id="massoLogo" />
+            <img className="neon" src={tv_scan_lines} id="massoLogoVHS"></img>
+          </div>
+        </div>
+
+        <div className="page-wrapper">
+          <div className="left-panel">
+            <NavCard />
+            <StatusCard />
+            <Projects />
+            {/* When you add more content/learn more, make it 3 PANELS! Project on left side and nav on right */}
+          </div>
+          <div className="main-panel">
+            <Hero />
+            <About />
+            <div className="ad">
+              <img src={tv_scan_lines_2} id="tv-scan-lines"></img>
+              <img src={bannerAds[currentIndex]} alt="" id="bannerAds" />
             </div>
 
-            <div className="page-wrapper">
-              <div className="left-panel">
-              <NavCard ScrollToPage={ScrollToPage}/>
-              <StatusCard />
-              <Projects />
-            {/* When you add more content/learn more, make it 3 PANELS! Project on left side and nav on right */}
-              </div>
-              <div className="main-panel">
-                <Hero />
-                <About />
-                <div className="ad">
-         
-                  <img src={tv_scan_lines_2} id="tv-scan-lines"></img>
-                  <img
-                    src={bannerAds[currentIndex]}
-                    alt=""
-                    id="bannerAds"
-                  />
-                </div>
-       
-                <Skills />
-                <Contact/>
-                <Footer />
-              </div>
-              <div className="right-panel">
-              
-              </div>
-            </div>
+            <Skills />
+            <Contact />
+            <Footer />
           </div>
-        </ParallaxLayer>
-      </Parallax>
+          <div className="right-panel"></div>
+        </div>
+      </div>
     </div>
   );
 };
