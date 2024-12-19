@@ -36,15 +36,9 @@ const App = () => {
 
   return (
     <div>
-      <video autoPlay loop muted playsInline className="background-video">
-        <source src={tv_scanlines_bg} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <video autoPlay loop muted playsInline className="background-video-2">
-        <source src={tv_scanlines_bg} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+
       <div className="app">
+
         <Navbar />
         <div className="title">
           <div className="title-front">

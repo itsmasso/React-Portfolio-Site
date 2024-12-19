@@ -50,13 +50,11 @@
  
 }
 
-.nav-mob-open{
-    display: none;
+.anchor-link{
+    text-decoration: none;
+    color: white;
 }
 
-.nav-mob-close{
-    display: none;
-}
 
 @media(max-width:768px){
 

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import "./Navbar.css";
-
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Navbar = () => {
 
@@ -17,9 +17,7 @@ const Navbar = () => {
           <i class="uil uil-youtube"></i>
         </a>
 
-        <div>
-        Connect
-        </div>
+        <AnchorLink className="anchor-link"offset={50} href="#contact"><div>Connect</div></AnchorLink>
       </div>
     </div>
   );
