@@ -6,7 +6,7 @@ const About = () => {
     <div id="about" className="about">
       <div className="about-title">
         <span>&#10209;</span>
-        <h1 className="vhs neon">WHO IS SAMMY?</h1>
+        <h1 className="vhs neon">WHO AM I<span style={{fontFamily:'PixelNes', fontSize: '30px'}}>?</span></h1>
       </div>
       <div className="about-section">
         <div className="about-info">

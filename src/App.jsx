@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
@@ -24,6 +24,12 @@ const bannerAds = [spotify_ad, github_ad];
 
 const App = () => {
   
+  const scrollRef = useRef();
+
+  const ScrollToPage = (page) =>{
+    scrollRef.current.scrollTo(page);
+  }
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -37,7 +43,7 @@ const App = () => {
   
   return (
     <div>
-      <Parallax pages={1.5}>
+      <Parallax pages={2} ref={scrollRef}>
         <ParallaxLayer>
           <video autoPlay loop muted playsInline className="background-video">
             <source src={tv_scanlines_bg} type="video/mp4" />
@@ -50,7 +56,7 @@ const App = () => {
         </ParallaxLayer>
         <ParallaxLayer offset={0} factor={1} speed={0.25}>
           <div className="app">
-            <Navbar/>
+            <Navbar />
             <div className="title">
               <div className="title-front">
                 <h1 className="vhs">マッソ</h1>
@@ -67,7 +73,10 @@ const App = () => {
 
             <div className="page-wrapper">
               <div className="left-panel">
-                <Projects />
+              <NavCard ScrollToPage={ScrollToPage}/>
+              <StatusCard />
+              <Projects />
+            {/* When you add more content/learn more, make it 3 PANELS! Project on left side and nav on right */}
               </div>
               <div className="main-panel">
                 <Hero />
@@ -81,12 +90,13 @@ const App = () => {
                     id="bannerAds"
                   />
                 </div>
+       
                 <Skills />
+                <Contact/>
                 <Footer />
               </div>
               <div className="right-panel">
-                <NavCard />
-                <StatusCard />
+              
               </div>
             </div>
           </div>

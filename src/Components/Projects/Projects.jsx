@@ -1,7 +1,6 @@
 import React from "react";
 import "./Projects.css";
 import project_data from "../../assets/project_data";
-import arrow_icon from "../../assets/arrow_icon.svg";
 
 import tv_scan_lines_2 from "../../assets/tv_scan_lines_2.gif";
 

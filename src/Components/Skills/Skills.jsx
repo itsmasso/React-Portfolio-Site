@@ -6,7 +6,8 @@ const Skills = () => {
   return (
     <div className="skill-wrapper">
       <div className="skills-title">
-        <h1 className="vhs neon">My Skills:</h1>
+      <span>&#10209;</span>
+        <h1 className="vhs neon-white">My Skills</h1>
       </div>
       <div className="skills">
         <div className="skill">

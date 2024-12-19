@@ -3,7 +3,7 @@ import { FaReact } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaUnity } from "react-icons/fa6";
 import { IoLogoCss3 } from "react-icons/io5";
-import { IoLogoJavascript } from "react-icons/io5";
+
 import { RiJavaLine } from "react-icons/ri";
 import { TbBrandCSharp } from "react-icons/tb";
 import { FaPython } from "react-icons/fa";
@@ -25,10 +25,7 @@ const GoodSkillList = [
         icon: IoLogoCss3,
         name: "CSS"
     },
-    {
-        icon: IoLogoJavascript,
-        name: "Javascript"
-    },
+
     {
         icon: RiJavaLine,
         name: "Java"

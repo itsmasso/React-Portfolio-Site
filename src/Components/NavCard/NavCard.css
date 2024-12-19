@@ -4,7 +4,7 @@
     flex-direction: column;
     border: 2px solid #343434;
     border-radius: 4px;
-    width: 170px;
+    width: 100%;
     padding: 5px 5px;
     gap: 5px;
 
@@ -18,14 +18,14 @@
 }
 
 .navcard-title span{
-    font-size: 20px;
+    font-size: 15px;
 }
 .navcard h1{
 
-    font-family: 'PerfectDOSVGA';
+    font-family: MadouFuto;
     text-align: start;
     font-size: 25px;
-    
+    font-weight: 100;
     
     color: rgba(255, 255, 255, 0.719);
     text-shadow: -1px -1px 0 #42424294;
@@ -50,7 +50,7 @@
     
 }
 
-.nav-menu li{
+.nav-menu li, .nav-menu a {
     display: flex;
     color: white;
     flex-direction: column;
@@ -59,7 +59,7 @@
     text-decoration: none;
 }
 
-.nav-menu li:hover{
+.nav-menu li:hover, .nav-menu a:hover{
     color: #ff2ddc;
     border-color: #ff2ddc;
 }
@@ -67,4 +67,7 @@
 .nav-menu li img{
     display: flex;
     margin: auto;
+}
+@media(max-width:768px){
+
 }

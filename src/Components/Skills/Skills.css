@@ -12,7 +12,7 @@
 .skills-title{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .skills-title span{
@@ -20,13 +20,13 @@
 }
 
 .skills-title h1 {
-    font-family: 'PerfectDOSVGA';
+    font-family: MadouFuto;
     text-align: start;
     font-size: 26px;
     font-weight: 500;
     
-    color: rgba(0, 237, 205, 0.8);
-    text-shadow: -1px -1px 0 rgb(0, 94, 81, 0.541);
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: -1px -1px 0 rgba(63, 63, 63, 0.541);
 
 }
 
@@ -47,7 +47,7 @@
 
 .skill p span{
     font-size: 24px;
-    font-family: 'PerfectDOSVGA';
+    font-family: MadouFuto;
     color: white;
 }
 
@@ -55,6 +55,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 14px;
+    width: 100%;
 }
 
 .skill-button{
@@ -75,7 +76,7 @@
 
 .skills p {
     font-size: 24px;
-    font-family: 'PerfectDOSVGA';
+    font-family: MadouFuto;
     color: rgba(0, 237, 205, 0.8);
     text-shadow: -1px -1px 0 rgb(0, 94, 81, 0.541);
 }
@@ -99,36 +100,9 @@
 
 
 @media(max-width:768px){
-    .skill{
-        gap: 70px;
-        align-items: center;
+    .skill-list{
 
-    }
+        grid-template-columns: 1fr 1fr 1fr ;
 
-    .skill p{
-        font-size: 20px;
-    }
-
-    .skill hr{
-        height: 6px;
-    }
-
-    .achievements{
-        justify-content: space-between;
-
-    }
-
-    .achievement{
-        gap: 10px;
-    }
-
-    .achievement h1{
-        font-size: 34px;
-        font-weight: 700;
-    }
-
-    .achievement p{
-        text-align: center;
-        font-size: 16px;
     }
 }

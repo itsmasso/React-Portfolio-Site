@@ -5,24 +5,53 @@
     flex-direction: column;
     border: 2px solid #343434;
     border-radius: 4px;
-    width: 170px;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 5px 5px;
     gap: 5px;
     
 }
 
+.status-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-title span{
+    font-size: 15px;
+}
+
 .status-title h1{
-    font-family: PixelOperator;
+    font-family: MadouFuto;
+    text-align: start;
+    font-size: 25px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.719);
+    text-shadow: -1px -1px 0 #42424294;
+}
+
+.status-title p{
+    position: absolute;
+    top: 7px;
+    right: 7px;
 }
 
 .status-description{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: start;
+    list-style: none;
+    border: 2px solid #343434;
+   
+    gap: 2px;
+    padding: 13px 13px;
 }
 
 .status-description h1{
-    font-family: PixelOperator;
+    font-family: MadouFuto;
+
+    font-weight: 100;
     color: #00fe51;
 }
 

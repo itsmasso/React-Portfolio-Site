@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./StatusCard.css";
-import windows_screen_widget from "../../assets/windows_screen_widget.svg";
+
 
 const StatusCard = () => {
   const [time, setTime] = useState(new Date());
@@ -16,13 +16,15 @@ const StatusCard = () => {
 
   return (
     <div className="status-card">
-      <img src={windows_screen_widget} alt="" id="windows_widget" />
+      
       <div className="status-title">
-        <h1>Status</h1>
+        <span>&#10209;</span>
+        <h1 className="vhs neon-white">Status</h1>
+        <p>_ &#9633; x</p>
       </div>
       <div className="status-description">
         <p>{time.toLocaleTimeString()} in Socal </p>
-        <h1>Online</h1>
+        <h1 className="vhs">Online</h1>
         <p>Currently listening to synthwave</p>
       </div>
     </div>
