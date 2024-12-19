@@ -20,10 +20,10 @@ import spotify_ad from "./assets/follow_spotify_ad.gif";
 import github_ad from "./assets/github_ad.gif";
 
 
-const bannerAds = [spotify_ad, github_ad];
+
 
 const App = () => {
-  
+  const bannerAds = [spotify_ad, github_ad];
   const scrollRef = useRef();
 
   const ScrollToPage = (page) =>{
