@@ -21,9 +21,23 @@ import github_ad from "./assets/github_ad.gif";
 
 const App = () => {
   const bannerAds = [spotify_ad, github_ad];
-
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth <= 768;
+      // Only update state if the value actually changes
+      if (mobile !== isMobile) {
+        setIsMobile(mobile);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+  
+    return () => window.removeEventListener("resize", handleResize);
+  }, [isMobile]);
+  
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) =>
@@ -49,12 +63,14 @@ const App = () => {
             <img className="neon" src={tv_scan_lines} id="massoLogoVHS"></img>
           </div>
         </div>
+        
 
         <div className="page-wrapper">
+  
           <div className="left-panel">
             <NavCard />
             <StatusCard />
-            <Projects />
+            {!isMobile && <Projects />}
             {/* When you add more content/learn more, make it 3 PANELS! Project on left side and nav on right */}
           </div>
           <div className="main-panel">
@@ -66,6 +82,7 @@ const App = () => {
             </div>
 
             <Skills />
+            {isMobile && <Projects />}
             <Contact />
             <Footer />
           </div>

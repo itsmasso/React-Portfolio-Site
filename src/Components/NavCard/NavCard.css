@@ -74,6 +74,7 @@
     }
     .navcard{
         border: none;
+        
     }
     .navcard span{
         display: none;
@@ -85,16 +86,13 @@
         align-items: center;
     }
 
-    .title{
-        margin-bottom: -100px;
-    }
+
    .nav-main{
     display: flex;
     flex-direction: row;
-    gap:25px;
+    gap:15px;
     
    }
-
 
     .nav-links{
         display: none

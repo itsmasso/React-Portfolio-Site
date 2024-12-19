@@ -74,7 +74,7 @@
 .profile img{
     margin-bottom: 70px;
     width: 150%;
-   
+    
     
 }
 
@@ -149,5 +149,8 @@
 }
 
 @media(max-width:768px){
-
+    .profile img{
+        margin: 0;
+      
+    }
 }
