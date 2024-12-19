@@ -235,7 +235,7 @@
     }
   }
 
-  @media (max-width:768px) {
+  @media screen and (max-width:768px) {
     .page-wrapper{
    
       grid-template-columns: 180px 430px 0px;
