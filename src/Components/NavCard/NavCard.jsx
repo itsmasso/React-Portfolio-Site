@@ -9,7 +9,8 @@ const NavCard = () => {
 
   const navItems = [
     { label: "Home", key: "home" },
-    { label: "About Me", key: "about" }, 
+    { label: "About", key: "about" }, 
+    { label: "Projects", key: "projects" },
     { label: "Skills", key: "skills" },
     { label: "Contact", key: "contact" },
 
@@ -31,7 +32,7 @@ const NavCard = () => {
         <p>_ &#9633; x</p>
       </div>
       <div className="nav-menu">
-      <ul>
+      <ul className="nav-main">
         {navItems.map((item) => (
           <NavItem
             key={item.key}
@@ -41,7 +42,7 @@ const NavCard = () => {
           />
         ))}
       </ul>
-      <ul>
+      <ul className="nav-links">
         {navLinks.map((item, index) => {
           return (
             

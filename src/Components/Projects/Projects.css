@@ -182,4 +182,12 @@
     .project-card-body p{
         text-align: center;
     }
+
+    .projects{
+        position: absolute;
+        top: 1900px;
+        left: 10px;
+        right: 10px;
+        
+    }
   }

@@ -69,5 +69,34 @@
     margin: auto;
 }
 @media(max-width:768px){
+    .navcard-title{
+        display: none;
+    }
+    .navcard{
+        border: none;
+    }
+    .navcard span{
+        display: none;
+    }
+    .nav-menu{
+        border: none;
+        font-size: 18px;
+        margin-bottom: -40px;
+        align-items: center;
+    }
 
+    .title{
+        margin-bottom: -100px;
+    }
+   .nav-main{
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+    
+   }
+
+
+    .nav-links{
+        display: none
+    }
 }
