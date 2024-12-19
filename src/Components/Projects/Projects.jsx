@@ -3,9 +3,9 @@ import "./Projects.css";
 
 
 import tv_scan_lines_2 from "../../assets/tv_scan_lines_2.gif";
-import video_game_icon from './invader.svg'
-import food_icon from './food_icon.svg'
-import compiler_icon from './compiler_icon.svg'
+import video_game_icon from '../../assets/invader.svg'
+import food_icon from '../../assets/food_icon.svg'
+import compiler_icon from '../../assets/compiler_icon.svg'
 
 const Projects = () => {
 const project_data = [
