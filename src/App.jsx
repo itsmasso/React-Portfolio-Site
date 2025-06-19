@@ -69,7 +69,7 @@ const App = () => {
             <Hero />
             <About />
             <div className="ad">
-              <img src={github_ad} alt="" id="bannerAds" />
+              <img src={masso_logo} alt="" id="massoLogo" />
               <img src={tv_scan_lines_2} id="tv-scan-lines"></img>
             </div>
 
