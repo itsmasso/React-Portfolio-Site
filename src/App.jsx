@@ -16,11 +16,9 @@ import masso_logo from "./assets/MassoPixelArtLogo.svg";
 import tv_scan_lines from "./assets/tv_scan_lines.gif";
 import tv_scan_lines_2 from "./assets/tv_scan_lines_2.gif";
 import tv_scanlines_bg from "./assets/tv_scan_lines.mp4";
-import spotify_ad from "./assets/follow_spotify_ad.gif";
-import github_ad from "./assets/github_ad.gif";
 
 const App = () => {
-  const bannerAds = [spotify_ad, github_ad];
+  const bannerAds = ["/follow_spotify_ad.gif", "/github_ad.gif"];
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [currentIndex, setCurrentIndex] = useState(0);
 
