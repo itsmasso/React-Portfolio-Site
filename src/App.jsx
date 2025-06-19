@@ -8,7 +8,6 @@ import Footer from "./Components/Footer/Footer";
 import StatusCard from "./Components/StatusCard/StatusCard";
 import "./App.css";
 
-
 import NavCard from "./Components/NavCard/NavCard";
 import Skills from "./Components/Skills/Skills";
 
@@ -16,10 +15,8 @@ import masso_logo from "./assets/MassoPixelArtLogo.svg";
 import tv_scan_lines from "./assets/tv_scan_lines.gif";
 import tv_scan_lines_2 from "./assets/tv_scan_lines_2.gif";
 import tv_scanlines_bg from "./assets/tv_scan_lines.mp4";
-
-
+import github_ad from "./assets/github_ad.svg";
 const App = () => {
-
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -33,10 +30,10 @@ const App = () => {
     };
 
     window.addEventListener("resize", handleResize);
-  
+
     return () => window.removeEventListener("resize", handleResize);
   }, [isMobile]);
-  
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) =>
@@ -49,9 +46,7 @@ const App = () => {
 
   return (
     <div>
-
       <div className="app">
-
         <Navbar />
         <div className="title">
           <div className="title-front">
@@ -62,10 +57,8 @@ const App = () => {
             <img className="neon" src={tv_scan_lines} id="massoLogoVHS"></img>
           </div>
         </div>
-        
 
         <div className="page-wrapper">
-  
           <div className="left-panel">
             <NavCard />
             <StatusCard />
@@ -77,7 +70,7 @@ const App = () => {
             <About />
             <div className="ad">
               <img src={tv_scan_lines_2} id="tv-scan-lines"></img>
-              <img src="/github_ad.svg" alt="" id="bannerAds" />
+              <img src={github_ad} alt="" id="bannerAds" />
             </div>
 
             <Skills />
