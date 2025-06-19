@@ -27,9 +27,6 @@ const Hero = () => {
             <p>
               <span>Born</span> May 2001
             </p>
-            <p>
-              <span>Major</span> Computer Science
-            </p>
           </div>
           <div className="hero-action">
             <a href="../../assets/Sammy_Luong_Resume.pdf" download>
