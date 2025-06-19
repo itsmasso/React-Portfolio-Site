@@ -77,7 +77,7 @@ const App = () => {
             <About />
             <div className="ad">
               <img src={tv_scan_lines_2} id="tv-scan-lines"></img>
-              <img src="/github_ad.png" alt="" id="bannerAds" />
+              <img src="/github_ad.svg" alt="" id="bannerAds" />
             </div>
 
             <Skills />

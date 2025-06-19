@@ -112,14 +112,14 @@
 .ad {
   position: relative;
   background-color: white;
-
+  width: 110%;
+  height: 110px;
   border-radius: 4px;
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center center;
   overflow: hidden;
- width: 400px;
-  height: 110px;
+
 }
 
 #bannerAds {
