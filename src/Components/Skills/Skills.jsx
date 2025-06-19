@@ -11,7 +11,6 @@ const Skills = () => {
       </div>
       <div className="skills">
         <div className="skill">
-          <p><span className="vhs neon-white">[</span > good <span className="vhs neon-white">]</span></p>
           <div className="skill-list">
             {goodSkillsList.map((skills, index) => {
               const Icon = skills.icon;
@@ -26,22 +25,7 @@ const Skills = () => {
             })}
           </div>
         </div>
-        <div className="skill">
-          <p ><span className="vhs neon-white">[</span> ok <span className="vhs neon-white">]</span></p>
-          <div className="skill-list">
-            {OkSkillList.map((skills, index) => {
-              const Icon = skills.icon;
-              return (
-                <div key={index} className="skill-button">
-                  <span className="button-icon">
-                    <Icon />
-                  </span>
-                  <span>{skills.name}</span>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+
       </div>
     </div>
   );

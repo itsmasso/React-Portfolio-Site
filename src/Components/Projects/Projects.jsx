@@ -1,42 +1,51 @@
 import React from "react";
 import "./Projects.css";
 
-
 import tv_scan_lines_2 from "../../assets/tv_scan_lines_2.gif";
-import video_game_icon from '../../assets/invader.svg'
-import food_icon from '../../assets/Food_Icon.svg'
-import compiler_icon from '../../assets/compiler_icon.svg'
-
+import video_game_icon from "../../assets/invader.svg";
+import food_icon from "../../assets/Food_Icon.svg";
+import compiler_icon from "../../assets/compiler_icon.svg";
+import coins_icon from "../../assets/coin.png";
 const Projects = () => {
-const project_data = [
+  const project_data = [
     {
-        name:"Pro Angler",
-        image: video_game_icon,
-        description: "A 2D pixel art fishing game made in Unity. Want to see more?",
-        technologies:"Made in Unity's 2D engine and C#.",
-        link: "https://itsmasso.itch.io/pro-angler"
+      name: "Dreamlocked",
+      image: video_game_icon,
+      description:
+        "A 3D multiplayer horror game made in Unity 3D using Steam and Unity's netcoding solution for hosting online lobbies. Want to see more?",
+      technologies: "Made in Unity's 3D engine and netcoding solution, C#, and Steamworks.",
+      link: "https://github.com/itsmasso/Dreamlocked",
     },
     {
-        name:"Recipe Management API",
-        image: food_icon,
-        description: "A CRUD API for recipes that uses token-based authentication. Want to see more?",
-        technologies:"Made using Python, Flask, Redis, and MySQL.",
-        link: "https://github.com/mkt989/CPSC-449-Final-Project"
+      name: "MtxTracker",
+      image: coins_icon,
+      description:
+        "A full stack web app for logging and tracking gaming expenses. (Note: Server host spins down after inactivity, so it takes a while to load) Want to see more?",
+      technologies:
+        "Made using React, Express.js, Node.js, MongoDB, HTML, and CSS",
+      link: "https://mtxtracker.com",
     },
     {
-        name:"Compiler Project",
-        image: compiler_icon,
-        description: "Part of a functional compiler that can parse tokens and convert code to assembly code. Want to see more?",
-        technologies:"Made in Java only!",
-        link: "https://github.com/itsmasso/CompilerProject/tree/main"
+      name: "Pro Angler",
+      image: video_game_icon,
+      description:
+        "A 2D pixel art fishing game made in Unity. Want to see more?",
+      technologies: "Made in Unity's 2D engine and C#.",
+      link: "https://itsmasso.itch.io/pro-angler",
     },
-
-
-]
+    {
+      name: "Fullstack profile page mockup",
+      image: compiler_icon,
+      description:
+        "A simple full-stack user profile management app. (Note: Server host spins down after inactivity, so it takes a while to load) Want to see more?",
+      technologies: "Made with React, Node.js, Express.js, HTML, CSS, and MongoDB",
+      link: "https://github.com/itsmasso/Profile-Page",
+    },
+  ];
   return (
     <div id="projects" className="projects">
       <div className="projects-title ">
-      <h1 className="vhs neon-white">Projects</h1>
+        <h1 className="vhs neon-white">Projects</h1>
       </div>
       <div className="projects-container">
         {project_data.map((projects, index) => {
@@ -56,14 +65,15 @@ const project_data = [
                   </div>
 
                   <div className="projects-readmore">
-                    <a href={projects.link} target="_blank"><p>Yes</p></a>
+                    <a href={projects.link} target="_blank">
+                      <p>Yes</p>
+                    </a>
                   </div>
                 </div>
               </div>
               <div className="marquee-wrapper">
                 <div className="marquee">
                   <p>{projects.technologies}</p>
-
                 </div>
               </div>
             </div>

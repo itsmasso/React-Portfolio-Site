@@ -40,7 +40,7 @@ const Hero = () => {
       </div>
       <div className="description">
         <p>
-          Hi, I'm Sammy! I am a junior developer and a student at CSUF with a
+          Hi, I'm Sammy! I am a junior developer and a recent CSUF graduate with a
           huge passion for web development and game development.
         </p>
       </div>
