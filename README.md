@@ -3,4 +3,4 @@
 
 ## Deployed Link:
 https://portfolio-tawny-psi-31.vercel.app/
-Note: Some gifs are not working and mobile device responsiveness is not working. Parallax package is breaking it/making it not work properly on mobile.
+Note: Some gifs are not working...
