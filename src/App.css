@@ -21,7 +21,7 @@
   width: 100%;
 }
 
-#massoLogo {
+.vhs-image-content {
   position: relative;
   z-index: -1;
   height: 100%;

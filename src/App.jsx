@@ -18,7 +18,6 @@ import tv_scanlines_bg from "./assets/tv_scan_lines.mp4";
 import github_ad from "./assets/github_ad.gif";
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
@@ -43,7 +42,7 @@ const App = () => {
             <h1 className="vhs">マッソ</h1>
           </div>
           <div className="title-back">
-            <img src={masso_logo} alt="" id="massoLogo" />
+            <img src={masso_logo} alt="" className="vhs-image-content" />
             <img className="neon" src={tv_scan_lines} id="massoLogoVHS"></img>
           </div>
         </div>
@@ -59,7 +58,7 @@ const App = () => {
             <Hero />
             <About />
             <div className="ad">
-              <img src={github_ad} alt="" id="massoLogo" />
+              <img src={github_ad} alt="" className="vhs-image-content" />
               <img src={tv_scan_lines_2} id="tv-scan-lines"></img>
             </div>
 
