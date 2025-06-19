@@ -34,16 +34,6 @@ const App = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [isMobile]);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex == bannerAds.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 7000);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
   return (
     <div>
       <div className="app">
@@ -69,7 +59,7 @@ const App = () => {
             <Hero />
             <About />
             <div className="ad">
-              <img src={github_ad} alt="" id="massologo" />
+              <img src={github_ad} alt="" id="bannerAds" />
               <img src={tv_scan_lines_2} id="tv-scan-lines"></img>
             </div>
 
