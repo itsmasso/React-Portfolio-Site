@@ -16,7 +16,7 @@ import masso_logo from "./assets/MassoPixelArtLogo.svg";
 import tv_scan_lines from "./assets/tv_scan_lines.gif";
 import tv_scan_lines_2 from "./assets/tv_scan_lines_2.gif";
 import tv_scanlines_bg from "./assets/tv_scan_lines.mp4";
-import github_ad from "./assets/github_ad.png";
+
 
 const App = () => {
 
@@ -77,7 +77,7 @@ const App = () => {
             <About />
             <div className="ad">
               <img src={tv_scan_lines_2} id="tv-scan-lines"></img>
-              <img src={github_ad} alt="" id="bannerAds" />
+              <img src="/github_ad.png" alt="" id="bannerAds" />
             </div>
 
             <Skills />
