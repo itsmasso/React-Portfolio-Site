@@ -29,7 +29,7 @@ const Hero = () => {
             </p>
           </div>
           <div className="hero-action">
-            <a href="../../assets/Sammy_Luong_Resume.pdf" download>
+            <a href="/Sammy_Luong_Resume.pdf" download>
               <div className="hero-resume">My resume</div>
             </a>
           </div>
