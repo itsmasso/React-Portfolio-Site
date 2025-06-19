@@ -114,9 +114,7 @@
   width: 110%;
   height: 110px;
   border-radius: 4px;
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center center;
+  z-index: -1;
   overflow: hidden;
 }
 
@@ -125,6 +123,7 @@
   height: 100%;
   object-fit: cover;
   width: 100%;
+  z-index: -1;
 }
 
 #tv-scan-lines {
