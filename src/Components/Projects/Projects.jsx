@@ -14,7 +14,7 @@ const Projects = () => {
       description:
         "A 3D multiplayer horror game made in Unity 3D using Steam and Unity's netcoding solution for hosting online lobbies. Want to see more?",
       technologies: "Made in Unity's 3D engine and netcoding solution, C#, and Steamworks.",
-      link: "https://github.com/itsmasso/Dreamlocked",
+      link: "https://store.steampowered.com/app/3709240/Dreamlocked/",
     },
     {
       name: "MtxTracker",
@@ -23,7 +23,7 @@ const Projects = () => {
         "A full stack web app for logging and tracking gaming expenses. (Note: Server host spins down after inactivity, so it takes a while to load) Want to see more?",
       technologies:
         "Made using React, Express.js, Node.js, MongoDB, HTML, and CSS",
-      link: "https://mtxtracker.com",
+      link: "https://github.com/itsmasso/microtransaction-tracker",
     },
     {
       name: "Pro Angler",
