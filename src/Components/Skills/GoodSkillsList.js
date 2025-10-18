@@ -2,7 +2,7 @@ import { FaReact } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaUnity } from "react-icons/fa6";
 import { IoLogoCss3 } from "react-icons/io5";
-
+import { BiLogoPostgresql } from "react-icons/bi";
 import { RiJavaLine } from "react-icons/ri";
 import { TbBrandCSharp } from "react-icons/tb";
 import { FaPython } from "react-icons/fa";
@@ -12,6 +12,10 @@ import { SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { DiMongodb } from "react-icons/di";
 import { SiExpress } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
+import { FaDocker } from "react-icons/fa";
+import { TbSql } from "react-icons/tb";
+
 const GoodSkillList = [
   {
     icon: FaUnity,
@@ -67,6 +71,24 @@ const GoodSkillList = [
     icon: SiExpress,
     name: "Express",
   },
+  {
+    icon: TbSql,
+    name: "SQL"
+  },
+  {
+    icon: TbBrandCSharp,
+    name: "ASP.NET Core"
+  },
+  {
+    icon: FaAws,
+    name: "AWS"
+  },
+  {
+    icon: FaDocker,
+    name: "Docker"
+  },
+
+
 ];
 
 export default GoodSkillList;
