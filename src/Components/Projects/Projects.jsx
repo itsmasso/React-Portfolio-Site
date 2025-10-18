@@ -20,18 +20,18 @@ const Projects = () => {
       name: "MtxTracker",
       image: coins_icon,
       description:
-        "A full stack web app for logging and tracking gaming expenses. (Note: Server host spins down after inactivity, so it takes a while to load) Want to see more?",
+        "A full stack web app for logging and tracking gaming expenses. Want to see more?",
       technologies:
         "Made using React, Express.js, Node.js, MongoDB, HTML, and CSS",
       link: "https://github.com/itsmasso/microtransaction-tracker",
     },
     {
-      name: "Pro Angler",
-      image: video_game_icon,
+      name: "Recipedia",
+      image: food_icon,
       description:
-        "A 2D pixel art fishing game made in Unity. Want to see more?",
-      technologies: "Made in Unity's 2D engine and C#.",
-      link: "https://itsmasso.itch.io/pro-angler",
+        "A full stack web app for searching, saving, and generating recipes. Want to see more?",
+      technologies: "Made using ASP.NET Core, C#, HTML, CSS, and SQL",
+      link: "https://github.com/itsmasso/Recipedia",
     },
     {
       name: "Fullstack profile page mockup",
